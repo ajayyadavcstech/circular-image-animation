@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow: hidden;
+    /* background-color: gray; */
+    background-color: rgba(255, 183, 0, 0.167);
+}
+.animation{
+    width: 420px;
+    height: 420px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+    border:1px solid rgba(0, 0, 0, 0.344);
+    border-radius: 100%;
+    animation: large 26s infinite linear;
+}
+img{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+}
+.small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: relative;
+    background-color:rgba(27, 26, 26, 0.216);
+    animation: small 13s linear infinite;
+}
+
+.small>img{
+    animation: smallimg 26s linear infinite ;
+}
+#ola{
+    right: 20px;
+    top:20px;
+}
+#flipkart{
+    right: 20px;
+    bottom:20px;
+}
+#linkdin{
+    left: 20px;
+    top:20px;
+}
+#adobe{
+    left: 20px;
+    bottom:20px;
+}
+@keyframes small {
+    0%{
+        transform:rotateZ(0deg)
+    }
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes smallimg {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.whitediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-weight: 800;
+    color: rgb(128, 17, 0);
+    animation: smallimg 26s infinite linear;
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    background-color: rgba(149, 0, 255, 0.197);
+}
+
+#apple{
+    left: -60px;
+}
+#google{
+    left: -20px;
+    top: 10px;
+}
+#microsoft{
+    top: 80px;
+    right:-60px;
+}
+#amazon{
+    right: -10px;
+    bottom: -8px;
+}
+#meta{
+    bottom: -70px;
+    left: 100px;
+}
+#netflix{
+    top: -60px;
+    right: 80px;
+}
+.large>img{
+    animation: largeimg 26s infinite linear;
+}
+
+@keyframes large {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
+}
+
+@keyframes largeimg {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(-360deg);
+    }
+    
+}
+
+
+
